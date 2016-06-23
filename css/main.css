@@ -1,0 +1,71 @@
+.container{
+	text-align: center;
+	margin: 0 auto;
+	width: 45%;
+}
+.container .item{
+	text-align: left;
+	padding-bottom: 15px;
+	border-bottom:solid 2px #000000;
+}
+.container .row{
+	text-align: left;
+	border-bottom:solid 2px #000000;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	font-size: 14px;
+}
+.container .row:last-child{
+	border-bottom: none;
+}
+.container .author{
+	text-align: right;
+}
+​.container .topic{
+	display:inline-block;
+}
+​.container .rate{
+	display:inline-block;
+	width: 100%;
+	text-align: left;
+}
+.tanya{
+	text-align: left;
+	width: 100%;
+	padding-top:10px;
+	padding-bottom:0px;
+	border-bottom: solid 2px #000000;
+}
+.tanyakiri{
+	text-align: center;
+	width:7%;
+	float: left;
+	padding-top:15px;
+	font-size: 35px;
+}
+.tanyakanan{
+	float: right;
+	width:93%;
+	text-align: justify;
+	padding-top: 19px;
+}
+.jawabkiri{
+	text-align: center;
+	width:7%;
+	float: left;
+	padding-top:25px;
+	font-size: 35px;
+
+}
+.jawabkanan{
+	float: right;
+	width:93%;
+	text-align: justify;
+	padding-top: 10px;
+}
+
+hr{
+	display: block;
+	border:1px;
+	border-top: 2px solid;
+}
