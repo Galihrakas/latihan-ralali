@@ -1,0 +1,34 @@
+.container{
+	margin: 10px auto;
+	max-width: 50%;
+	padding: 10px;
+}
+.head-label{
+	border-bottom: solid 2px #000000;
+	margin-top: 40px;
+}
+.wrapper-answer{
+	border-bottom: solid 2px #000000;
+}
+.tanyakiri{
+	text-align: center;
+	width:7%;
+	float: left;
+	padding-top:15px;
+	font-size: 35px;
+}
+.tanyakanan{
+	float: right;
+	width:93%;
+	text-align: justify;
+	padding-top: 19px;
+}
+.author{
+	text-align: right;
+}
+.author a{
+	border-left: solid 1px #CCCCCC;
+	padding: 0 0 0 5px;
+	list-style: none;
+	text-decoration: none;
+}

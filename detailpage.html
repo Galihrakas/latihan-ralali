@@ -1,27 +1,35 @@
-<html>
+<html ng-app="myApp" ng-view>
 	<head>
+		<meta charset="utf-8">
 		<title>Detail Page</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<base href="/"></base>
+		<link rel="stylesheet" type="text/css" href="/latihan-ralali/css/style.css">
+		<script type="text/javascript" src="/latihan-ralali/js/angular.js"></script>
+		<script type="text/javascript" src="/latihan-ralali/js/app.js"></script>
+		<script type="text/javascript" src="/latihan-ralali/js/angular-route.js"></script>
 	</head>
 	<body>
 		<div class="container">
-			<h1><b>Simple StackExchange</b></h1>
+			<h1><center>Simple StackExchange</center></h1>
+			<h2 class="head-label">Topik Pertanyaan</h2>
 
-			<div class="tanya"><h2>Topik pertanyaan</h2></div>
-			<div class="tanyakiri">2</div>
+			<div class="tanyakiri">
+				2
+			</div>
 			<div class="tanyakanan">
 				Maaf mas.jadi gini..saya orgnya curigaan.saya di indonesia.pacar saya di brunei..saya pengen tau dgn siapa saja dia chating..kalo bisa sih hystory bbm dia bisa d baca sma saya..kebetulan saya tau bbm id sama passwrd nya.tolong d bantu ya
-			<div class="author">Asked by "username" at "datetime"|<a href="#" style="color:orange;">edit</a>|<a href="#" style="color:red;">delete</a></div>
+				<p class="author">Asked by "username" at "datetime" <a href="#" style="color:orange;">edit</a> <a href="#" style="color:red;">delete</a></p>
 			</div>
-			<div class="tanya">
-				<h2> Jawaban</h2>
+
+			<h2 class="head-label">Jawaban</h2>
+			<div class="tanyakiri">
+					6
 			</div>
-			<div class="jawabkiri">6</div>
-			<div class="jawabkanan">
+			<div class="tanyakanan">
 				Jadi gini posisinya: ketika bbm dibuka di kamu, pesan bakal masuk di Device kamu. Dan di Device dia bbm biasanya minta log in lagi. Begitu sebaliknya.Karena bbm sifatnya sangat aman. Jadi pastinya gak bisa digunakan secara bersama-sama bbm dalam satu waktu di Device berbeda. Emang seperti itu kerjanya. :-)Justru kalau kamu lakukan itu malah curiga nanti doi takutnya. :-)
-			<div class="author">Answered by &lusername&gt at &ltdatetime&gt
+				<p class="author">Answered by &l;tusername&gt; at &lt;datetime&gt;</p>
 			</div>
-			<hr/>
-	
-</body>
+			<div class="head-labeel"></div>
+		</div>
+	</body>
 </html>

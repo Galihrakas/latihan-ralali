@@ -1,54 +1,31 @@
-<html>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<head>
-	<title>Index</title>
-</head>
-​
-<body>
-	<div class="container">
-		<h2>Simple StackExchange</h2>
-		<form method="post" action="">
-		<input type="text" name="nama" style="width:400px;" ">
-		<input type="submit" name="submit" value="Search">
-		</form>
- 		<h5>cannot find what are you looking for? <a href="http//google.com" style="color:orange;">Ask here</a></h5>
-	<div class="item">Recently Asked Question</div>
-	<div class="row">
-		<div class="rate"> 0 </br> Vote</div>
-		<div class="rate"> 0 </br> Answer</div>
-		<div class="topic"><span>The question topic is here</span></div>
-		<div class="author">Asked by <a href="#" style="color:blue;">name</a>|<a href="#" style="color:orange;">edit</a>|<a href="#" style="color:red;">delete</a></div>
-	</div>
-	<div class="row">
-		<div class="rate"> 0 </br> Vote</div>
-		<div class="rate"> 0 </br> Answer</div>
-		<div class="topic"><span>The question topic is here</span></div>
-		<div class="author">Asked by <a href="#" style="color:blue;">name</a>|<a href="#" style="color:orange;">edit</a>|<a href="#" style="color:red;">delete</a></div>
-	</div>
-​
-	<div class="row">
-		<div class="rate"> 0 </br> Vote</div>
-		<div class="rate"> 0 </br> Answer</div>
-		<div class="topic"><span>The question topic is here</span></div>
-		<div class="author">Asked by <a href="#" style="color:blue;">name</a>|<a href="#" style="color:orange;">edit</a>|<a href="#" style="color:red;">delete</a></div>
-	</div>
-	<div class="row">
-		<div class="rate"> 0 </br> Vote</div>
-		<div class="rate"> 0 </br> Answer</div>
-		<div class="topic"><span>The question topic is here</span></div>
-		<div class="author">Asked by <a href="#" style="color:blue;">name</a>|<a href="#" style="color:orange;">edit</a>|<a href="#" style="color:red;">delete</a></div>
-	</div>
-	<div class="row">
-		<div class="rate"> 0 </br> Vote</div>
-		<div class="rate"> 0 </br> Answer</div>
-		<div class="topic"><span>The question topic is here</span></div>
-		<div class="author">Asked by <a href="#" style="color:blue;">name</a>|<a href="#" style="color:orange;">edit</a>|<a href="#" style="color:red;">delete</a></div>
-	</div>
-	<div class="row">
-		<div class="rate"> 0 </br> Vote</div>
-		<div class="rate"> 0 </br> Answer</div>
-		<div class="topic"><span>The question topic is here</span></div>
-		<div class="author">Asked by <a href="#" style="color:blue;">name</a>|<a href="#" style="color:orange;">edit</a>|<a href="#" style="color:red;">delete</a></div>
-	</div>
-</body>
+<!DOCTYPE html>
+<html ng-app="myApp" ng-view>
+	<head>
+		<meta charset="utf-8">
+		<title>Index</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/angular.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/angular-route.js"></script>
+		<base href="/"></base>
+	</head>
+
+	<body id="container">
+		<header class="center" >
+			<h1 style="font-family: sans-serif;">Simple Stack Exchange</h1>
+			<input type="text" name="" style="width:80%;">
+			<input type="submit" name="" value="Search">
+			<span></br></span>
+			<span>Cannot find what you are looking for?<a style="color:orange;">Ask here</a></span>
+		</header>
+		<div class="konten" ng-controller="myCtrl">
+			<div class="list">Recently asked Question</div>
+			<div class="list" ng-repeat="x in articles">
+				<div class="scoring">{{x.vote}}<br/> votes</div>
+				<div class="scoring">{{x.answer}} <br/> answer</div>
+				<div class="list-item"><a ng-href="./latihan-ralali/detailpage.html?id={{x.id}}">{{x.title}}</div>
+				<div class="aksi">asked by <a style="color:blue;">{{x.author}}</a>|<a style="color:yellow;">edit</a><a style="color:red;">delete</a></div>
+			</div>
+		</div>
+	</body>
 </html>
